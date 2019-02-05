@@ -2,9 +2,9 @@
 .container{
     display: grid;
     grid-template-areas:
-            "header sidebar"
+            "header ."
             "section section"
-            "content footer";
+            ". footer";
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
 }

@@ -1,0 +1,33 @@
+/*Create a header that only goes half way across the screen and is blank on the other half. Create one section that goes all the way across the screen on the 2nd row. Lastly create a footer that's blank on the first half, but goes across to the end on the other half. DO NOT COPY THIS FROM YOUR LAST CLASSWORK. RETYPE EVERYTHING*/
+.container{
+    display: grid;
+    grid-template-areas:
+            "header sidebar"
+            "section section"
+            "content footer";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+header{
+    grid-area: header;
+    background-color: darkgray;
+}
+
+section{
+     grid-area: section;
+    background-color: darkgray;
+ }
+
+aside{
+    grid-area: sidebar;
+    background-color: darkgray;
+}
+
+nav{
+    grid-area: content;
+    background-color: darkgray;
+}
+footer{
+    grid-area: footer;
+    background-color: darkgray;
+}
